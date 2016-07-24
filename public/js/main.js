@@ -39364,7 +39364,13 @@ var TypeWriter = require('react-typewriter');
 var About = React.createClass({
   displayName: 'About',
 
-
+  getInitialState() {
+    return {};
+  },
+  onMouseOver: function () {
+    this.src = "./../public/img/facebook-icon.png";
+  },
+  onMouseOut: function () {},
   render: function () {
 
     var aboutStyle = {
@@ -39420,14 +39426,18 @@ var About = React.createClass({
           'I happen to know a bit about'
         ),
         React.createElement(
-          'span',
-          { style: spanStyle },
-          React.createElement('img', { src: './../public/img/HTML5_Logo.png', style: logoStyle }),
-          React.createElement('img', { src: './../public/img/css3logo.png', style: logoStyle }),
-          React.createElement('img', { src: './../public/img/js_logo.png', style: logoStyle }),
-          React.createElement('img', { src: './../public/img/bootstrap_logo.png', style: logoStyle }),
-          React.createElement('img', { src: './../public/img/react-logo.png', style: logoStyle }),
-          React.createElement('img', { src: './../public/img/nodejs-logo.png', style: logoStyle })
+          'div',
+          { className: 'text-center skills' },
+          React.createElement(
+            'span',
+            { style: spanStyle },
+            React.createElement('img', { src: './../public/img/HTML5_Logo.png', style: logoStyle }),
+            React.createElement('img', { src: './../public/img/css3logo.png', style: logoStyle }),
+            React.createElement('img', { src: './../public/img/js_logo.png', style: logoStyle }),
+            React.createElement('img', { src: './../public/img/bootstrap_logo.png', style: logoStyle }),
+            React.createElement('img', { src: './../public/img/react-logo.png', style: logoStyle }),
+            React.createElement('img', { src: './../public/img/nodejs-logo.png', style: logoStyle })
+          )
         ),
         React.createElement(
           'p',
@@ -39440,22 +39450,26 @@ var About = React.createClass({
           ' Reach out to me on '
         ),
         React.createElement(
-          'span',
-          { className: '' },
+          'div',
+          { className: 'text-center socials' },
           React.createElement(
-            'a',
-            { href: true },
-            React.createElement('img', { src: './../public/img/Tinder-Flame.png', style: socialStyle, className: 'tinder', onMouseOver: this.src = "./../public/img/facebook-icon.png", onMouseOut: this.src = "./../public/img/Tinder-Flame.png" })
-          ),
-          React.createElement(
-            'a',
-            { href: true },
-            React.createElement('img', { src: './../public/img/trulymadly-logo.png', style: socialStyle, className: 'hinge', onMouseOver: this.src = "./../public/img/Twitter-logo2.png", onMouseOut: this.src = "./../public/img/trulymadly-logo.png" })
-          ),
-          React.createElement(
-            'a',
-            { href: true },
-            React.createElement('img', { src: './../public/img/hitch_logo.png', style: socialStyle, className: 'hitch', onMouseOver: this.src = "./../public/img/github-256.png" })
+            'span',
+            { className: '' },
+            React.createElement(
+              'a',
+              { href: true },
+              React.createElement('img', { src: './../public/img/Tinder-Flame.png', style: socialStyle, className: 'tinder' })
+            ),
+            React.createElement(
+              'a',
+              { href: true },
+              React.createElement('img', { src: './../public/img/trulymadly-logo.png', style: socialStyle, className: 'trulymadly', onMouseOver: this.src = "./../public/img/Twitter-logo2.png", onMouseOut: this.src = "./../public/img/trulymadly-logo.png" })
+            ),
+            React.createElement(
+              'a',
+              { href: true },
+              React.createElement('img', { src: './../public/img/hitch_logo.png', style: socialStyle, className: 'hitch', onMouseOver: this.src = "./../public/img/github-256.png" })
+            )
           )
         )
       )
@@ -39490,7 +39504,7 @@ var Footer = React.createClass({
         'p',
         { className: 'text-center', style: footerText },
         'Made with ♥ , &',
-        React.createElement('img', { src: './../public/img/react-logo.png', className: 'logo', style: { width: '20px', height: '20px' } })
+        React.createElement('img', { src: './../public/img/react-logo.png', className: 'logo', style: { width: '20px', height: '20px', marginLeft: '4px' } })
       )
     );
   }
@@ -39516,7 +39530,7 @@ var HomePage = React.createClass({
     };
     var headingStyle = {
       color: '#4B4D52',
-      fontSize: '100px',
+      fontSize: '750%',
       fontFamily: 'Pacifico'
     };
     var contentStyle = {

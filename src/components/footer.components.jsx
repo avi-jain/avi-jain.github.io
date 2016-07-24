@@ -16,7 +16,7 @@ var Footer = React.createClass({
 		return(
 				<div className="footer" style={footerStyle}>
 					<p className="text-center" style={footerText}>Made with &hearts; , & 
-					<img src="./../public/img/react-logo.png" className="logo" style={{width:'20px',height:'20px'}}/></p>
+					<img src="./../public/img/react-logo.png" className="logo" style={{width:'20px',height:'20px',marginLeft:'4px'}}/></p>
 				</div>
 			);
 	}

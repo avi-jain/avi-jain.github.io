@@ -13,7 +13,7 @@ var HomePage = React.createClass({
         };
         var headingStyle={
           color: '#4B4D52',
-          fontSize:'100px',
+          fontSize:'750%',
           fontFamily:'Pacifico' 
         };
         var contentStyle={

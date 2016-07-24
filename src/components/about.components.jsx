@@ -2,7 +2,15 @@ var React = require('react');
 var TypeWriter = require('react-typewriter');
 
 var About = React.createClass({
-    
+    getInitialState(){
+      return{}
+    },
+    onMouseOver: function(){
+      this.src="./../public/img/facebook-icon.png"
+    },
+    onMouseOut:function(){
+
+    },
     render : function(){
 
         var aboutStyle={
@@ -51,6 +59,7 @@ var About = React.createClass({
             <div className='about container'>
                 <p className='text-center' style={textStyle}>I happen to know a bit about</p>
                 {/*Center this shit. Have to specify .png for logos.*/}
+                <div className='text-center skills'>
                 <span style={spanStyle}>
                 {/*Add links to the logos.Add tooltips and accessibility options*/}
                 <img src="./../public/img/HTML5_Logo.png" style={logoStyle} />
@@ -59,14 +68,17 @@ var About = React.createClass({
                 <img src="./../public/img/bootstrap_logo.png" style={logoStyle} />
                 <img src="./../public/img/react-logo.png" style={logoStyle} />
                 <img src="./../public/img/nodejs-logo.png" style={logoStyle} />
-                </span>  
+                </span>
+                </div>  
                 <p className='text-center' style={anotherTextStyle}> Building something with React? I could help.</p>
                 <p className='text-center' style={yetAnotherTextStyle}> Reach out to me on </p>
+                <div className='text-center socials'>
                 <span className=''>{/*Center this shit.Providing cdns(links) will reduce load time.*/}
-                <a href><img src="./../public/img/Tinder-Flame.png" style={socialStyle} className="tinder" onMouseOver={this.src="./../public/img/facebook-icon.png"} onMouseOut={this.src="./../public/img/Tinder-Flame.png"}/></a>
-                <a href><img src="./../public/img/trulymadly-logo.png" style={socialStyle} className="hinge" onMouseOver={this.src="./../public/img/Twitter-logo2.png"} onMouseOut={this.src="./../public/img/trulymadly-logo.png"} /></a>
+                <a href><img src="./../public/img/Tinder-Flame.png" style={socialStyle} className="tinder" /></a>
+                <a href><img src="./../public/img/trulymadly-logo.png" style={socialStyle} className="trulymadly" onMouseOver={this.src="./../public/img/Twitter-logo2.png"} onMouseOut={this.src="./../public/img/trulymadly-logo.png"} /></a>
                 <a href><img src="./../public/img/hitch_logo.png" style={socialStyle} className="hitch" onMouseOver={this.src="./../public/img/github-256.png"}  /></a>
-                </span>  
+                </span>
+                </div>  
             </div>
            </div>
        );
