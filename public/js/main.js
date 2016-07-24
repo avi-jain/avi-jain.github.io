@@ -39445,17 +39445,17 @@ var About = React.createClass({
           React.createElement(
             'a',
             { href: true },
-            React.createElement('img', { src: './../public/img/Tinder-Flame.png', style: socialStyle, className: 'tinder' })
+            React.createElement('img', { src: './../public/img/Tinder-Flame.png', style: socialStyle, className: 'tinder', onMouseOver: this.src = "./../public/img/facebook-icon.png", onMouseOut: this.src = "./../public/img/Tinder-Flame.png" })
           ),
           React.createElement(
             'a',
             { href: true },
-            React.createElement('img', { src: './../public/img/trulymadly-logo.png', style: socialStyle, className: 'hinge' })
+            React.createElement('img', { src: './../public/img/trulymadly-logo.png', style: socialStyle, className: 'hinge', onMouseOver: this.src = "./../public/img/Twitter-logo2.png", onMouseOut: this.src = "./../public/img/trulymadly-logo.png" })
           ),
           React.createElement(
             'a',
             { href: true },
-            React.createElement('img', { src: './../public/img/hitch_logo.png', style: socialStyle, className: 'hitch' })
+            React.createElement('img', { src: './../public/img/hitch_logo.png', style: socialStyle, className: 'hitch', onMouseOver: this.src = "./../public/img/github-256.png" })
           )
         )
       )
