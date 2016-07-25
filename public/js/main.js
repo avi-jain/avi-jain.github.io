@@ -39365,12 +39365,23 @@ var About = React.createClass({
   displayName: 'About',
 
   getInitialState() {
-    return {};
+    return {
+      tinder: "./../public/img/Tinder-Flame.png",
+      hitch: "./../public/img/hitch_logo.png",
+      twitter: "./../public/img/Twitter-logo2.png",
+      facebook: "./../public/img/facebook-icon.png",
+      github: "./../public/img/github-256.png",
+      trulymadly: "./../public/img/trulymadly-logo.png",
+
+      hover: false
+    };
   },
   onMouseOver: function () {
-    this.src = "./../public/img/facebook-icon.png";
+    this.setState({ hover: true });
   },
-  onMouseOut: function () {},
+  onMouseOut: function () {
+    this.setState({ hover: false });
+  },
   render: function () {
 
     var aboutStyle = {
@@ -39457,18 +39468,24 @@ var About = React.createClass({
             { className: '' },
             React.createElement(
               'a',
-              { href: true },
-              React.createElement('img', { src: './../public/img/Tinder-Flame.png', style: socialStyle, className: 'tinder' })
+              { href: 'https://github.com/avi-jain' },
+              React.createElement('img', { src: this.state.hover ? this.state.github : this.state.tinder,
+                style: socialStyle, className: 'tinder',
+                onMouseOver: this.onMouseOver, onMouseOut: this.onMouseOut })
             ),
             React.createElement(
               'a',
-              { href: true },
-              React.createElement('img', { src: './../public/img/trulymadly-logo.png', style: socialStyle, className: 'trulymadly', onMouseOver: this.src = "./../public/img/Twitter-logo2.png", onMouseOut: this.src = "./../public/img/trulymadly-logo.png" })
+              { href: 'https://www.facebook.com/avi.jain.524596' },
+              React.createElement('img', { src: this.state.hover ? this.state.facebook : this.state.trulymadly,
+                style: socialStyle, className: 'trulymadly',
+                onMouseOver: this.onMouseOver, onMouseOut: this.onMouseOut })
             ),
             React.createElement(
               'a',
-              { href: true },
-              React.createElement('img', { src: './../public/img/hitch_logo.png', style: socialStyle, className: 'hitch', onMouseOver: this.src = "./../public/img/github-256.png" })
+              { href: 'https://twitter.com/' },
+              React.createElement('img', { src: this.state.hover ? this.state.twitter : this.state.hitch,
+                style: socialStyle, className: 'hitch',
+                onMouseOver: this.onMouseOver, onMouseOut: this.onMouseOut })
             )
           )
         )
