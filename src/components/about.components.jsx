@@ -71,12 +71,12 @@ var About = React.createClass({
                 <div className='text-center skills'>
                 <span style={spanStyle}>
                 {/*Add links to the logos.Add tooltips and accessibility options*/}
-                <img src="./../public/img/HTML5_Logo.png" style={logoStyle} />
-                <img src="./../public/img/css3logo.png" style={logoStyle} />
-                <img src="./../public/img/js_logo.png" style={logoStyle} />
-                <img src="./../public/img/bootstrap_logo.png" style={logoStyle} />
-                <img src="./../public/img/react-logo.png" style={logoStyle} />
-                <img src="./../public/img/nodejs-logo.png" style={logoStyle} />
+                <img src="./../public/img/HTML5_Logo.png" style={logoStyle}     alt="HTML5" title="HTML5"/>
+                <img src="./../public/img/css3logo.png" style={logoStyle}       alt="CSS3" title="CSS3"/>
+                <img src="./../public/img/js_logo.png" style={logoStyle}        alt="JavaScript" title="JavaScript"/>
+                <img src="./../public/img/bootstrap_logo.png" style={logoStyle} alt="Bootstrap" title="Bootstrap"/>
+                <img src="./../public/img/react-logo.png" style={logoStyle}     alt="React" title="React"/>
+                <img src="./../public/img/nodejs-logo.png" style={logoStyle}    alt="NodeJS" title="NodeJS"/>
                 </span>
                 </div>  
                 <p className='text-center' style={anotherTextStyle}> Building something with React? I could help.</p>

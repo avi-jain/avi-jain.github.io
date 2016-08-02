@@ -24,6 +24,7 @@
     "react": "^15.1.0",
     "react-dom": "^15.1.0",
     "react-typewriter": "^0.4.1",
+    "smoothscroll": "^0.2.2",
     "watchify": "^3.7.0"
   }
 }
