@@ -66,7 +66,7 @@ var About = React.createClass({
         return(
            <div  id="about" style={aboutStyle}>
             <div className='about container'>
-                <p className='text-center' style={textStyle}>I happen to know a bit about</p>
+                <p className='text-center' style={textStyle}>I happen to know about</p>
                 {/*Center this shit. Have to specify .png for logos.*/}
                 <div className='text-center skills'>
                 <span style={spanStyle}>

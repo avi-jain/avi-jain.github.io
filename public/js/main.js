@@ -39551,7 +39551,7 @@ var About = React.createClass({
         React.createElement(
           'p',
           { className: 'text-center', style: textStyle },
-          'I happen to know a bit about'
+          'I happen to know about'
         ),
         React.createElement(
           'div',
