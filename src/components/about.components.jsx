@@ -78,7 +78,8 @@ var About = React.createClass({
                 <img src="./../public/img/react-logo.png" style={logoStyle}     alt="React" title="React"/>
                 <img src="./../public/img/nodejs-logo.png" style={logoStyle}    alt="NodeJS" title="NodeJS"/>
                 </span>
-                </div>  
+                </div>
+                <p className='text-center' style={yetAnotherTextStyle}> And much more.</p>  
                 <p className='text-center' style={anotherTextStyle}> Building something with React? I could help.</p>
                 <p className='text-center' style={yetAnotherTextStyle}> Reach out to me on </p>
                 <div className='text-center socials'>

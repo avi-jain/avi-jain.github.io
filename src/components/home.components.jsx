@@ -43,8 +43,8 @@ var HomePage = React.createClass({
               <h1 className='hello text-center' style={headingStyle}>hello</h1>
               <TypeWriter typing={1} onTypingEnd={this.showNextPage} delayMap={this.delays}>
                 <p style={contentStyle}>Welcome to my github portfolio.<br />
-                When I'm not busy binge watching shows, gaming, reading, copying college assignments
-                or simply whiling time away on the internet...
+                When I'm not binge watching shows, gaming, reading, copying college assignments
+                or simply whiling time away on the internet making dank memes...
                 <br/>
                 I &lt;code&gt; :)</p>
               </TypeWriter>
