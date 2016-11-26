@@ -1,0 +1,60 @@
+body {
+	background: #333333
+}
+/*
+@media (min-width: @screen-hs-min) {
+       // rules for mobile horizontal (480 > 768) 
+       font-size: ;
+}
+@media (min-width: @screen-sm-min) {
+       // rules for tablet (768 > 992) 
+       font-size: ;
+}
+@media (min-width: @screen-md-min) {
+       // rules for desktop (992 > 1200)
+       font-size: ;
+}
+@media (min-width: @screen-lg-min) {
+       // rules for large (> 1200) 
+       font-size: 14px;
+}
+*/
+.name{
+	color: #E5C453;
+	text-transform:uppercase;
+	font-family: "Bungee",cursive;
+	font-size: 3.5em;
+
+}
+.about{
+	color:#E57255;
+	text-transform: uppercase;
+	font-family: "Bungee",cursive;
+	font-size: 3.0em;
+}
+.desc{
+	color: #E5C453;
+	font-family: "Monda",sans-serif;
+	font-size: 1.5em; 
+}
+.fa{
+  color: #E57255;
+}
+.fa:hover{
+  transform: scale(1.2);
+}
+
+.bar{
+    padding: 0;
+    color:#E5C453;
+    border: #fff;
+    border-top: solid 5px;
+    text-align: center;
+    max-width: 250px;
+    margin: 25px auto 30px;
+}
+.skills li{
+	font-family: "Monda",cursive;
+	font-size: 1.4em;
+	color: #E5C453;
+}
